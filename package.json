@@ -1,15 +1,13 @@
 {
-  "name": "my_node_app",
+  "name": "my-app",
   "version": "1.0.0",
   "description": "A simple Node.js web application",
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.2"
-    // Add other dependencies here if needed
   },
   "scripts": {
     "start": "node index.js"
-    // You can add other scripts here if needed
   },
   "author": "Your Name",
   "license": "MIT"
