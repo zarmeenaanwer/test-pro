@@ -4,7 +4,7 @@
   become: yes
 
   vars:
-    app_directory: /home/ubuntu/my_node_app/app  # Replace with your application directory on the remote server
+    app_directory: /  # Replace with your application directory on the remote server
 
   tasks:
     - name: Update apt cache (for Debian-based systems)
@@ -21,7 +21,7 @@
 
     - name: Copy application files to the remote server
       synchronize:
-        src: ./my-app  # Path to your local application directory
+        src: /home/ubuntu/my-app   # Path to your local application directory
         dest: "{{ app_directory }}"
       delegate_to: localhost
 
